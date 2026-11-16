@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>plannerbaddie — plan the week, shop once, cook easy</title>
-<meta name="description" content="Pick one dinner you're craving and swipe your way to the whole week. Dinners that share groceries, one smart shopping list, a Sunday prep plan, and an easy cook every night.">
+<meta name="description" content="Pick one dinner you're craving and we'll build the whole week around it. Dinners that share groceries, one smart shopping list, a Sunday prep plan, and an easy cook every night.">
 <link rel="canonical" href="https://plannerbaddie.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="plannerbaddie">
 <meta property="og:url" content="https://plannerbaddie.com/">
 <meta property="og:title" content="plannerbaddie: plan the week, shop once, cook like a baddie">
-<meta property="og:description" content="Pick one dinner you're craving and swipe your way to the whole week. Dinners that share groceries, one list, one Sunday prep.">
-<meta property="og:image" content="https://plannerbaddie.com/og.jpg">
-<meta property="og:image:secure_url" content="https://plannerbaddie.com/og.jpg">
+<meta property="og:description" content="Pick one dinner you're craving and we'll build the whole week around it. Dinners that share groceries, one list, one Sunday prep.">
+<meta property="og:image" content="https://plannerbaddie.com/og-v2.jpg">
+<meta property="og:image:secure_url" content="https://plannerbaddie.com/og-v2.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="plannerbaddie: plan the week, shop once, cook like a baddie">
 <meta name="twitter:description" content="Dinners that share groceries, one list, one Sunday prep.">
-<meta name="twitter:image" content="https://plannerbaddie.com/og.jpg">
+<meta name="twitter:image" content="https://plannerbaddie.com/og-v2.jpg">
 <meta name="theme-color" content="#FAF9F7">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -101,32 +101,39 @@
   .scr-top { display: flex; justify-content: space-between; align-items: baseline; }
   .scr-top .chic { font-size: 22px; color: var(--pink); }
   .scr-top small { font-size: 11px; color: var(--muted); font-weight: 600; }
-  .scr-q { font-family: var(--serif); font-style: italic; font-size: 25px; line-height: 1.05; margin: 12px 0 14px; }
-  .deck { position: relative; height: 330px; }
-  .card { position: absolute; inset: 0; border-radius: 26px; overflow: hidden; color: #fff; padding: 18px; display: flex; flex-direction: column; justify-content: flex-end; box-shadow: 0 16px 30px -14px rgba(36,18,28,.4); }
-  .card .emoji { position: absolute; top: 50%; left: 50%; translate: -50% -62%; font-size: 108px; filter: drop-shadow(0 12px 16px rgba(0,0,0,.18)); }
-  .card h4 { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 26px; line-height: 1.05; position: relative; }
-  .card p { font-size: 12px; opacity: .9; margin-top: 4px; position: relative; }
-  .card .tag { position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,.92); color: var(--ink); font-size: 11px; font-weight: 700; padding: 5px 10px; border-radius: 999px; }
-  .c1 { background: linear-gradient(160deg, #FF9A6B, #E2456B); transform: rotate(-5deg) translate(-6px, 10px) scale(.94); }
-  .c2 { background: linear-gradient(160deg, #B7A2FF, #7B4BE0); transform: rotate(4deg) translate(6px, 5px) scale(.97); }
-  .c3 { background: linear-gradient(160deg, #FF5FA2, #B62BD9); animation: swipe 5s ease-in-out infinite; }
-  @keyframes swipe {
-    0%, 30% { transform: none; opacity: 1; }
-    48% { transform: translate(170px, -20px) rotate(18deg); opacity: 0; }
-    49% { transform: translate(0, 20px) scale(.94); opacity: 0; }
-    65%, 100% { transform: none; opacity: 1; }
-  }
-  .likebadge { position: absolute; top: 16px; right: 14px; border: 2px solid #fff; color: #fff; padding: 2px 10px; border-radius: 8px; font-weight: 800; font-size: 13px; letter-spacing: .08em; rotate: 12deg; opacity: 0; animation: like 5s ease-in-out infinite; }
-  @keyframes like { 0%, 22% { opacity: 0; } 34%, 44% { opacity: 1; } 48%, 100% { opacity: 0; } }
-  .scr-btns { display: flex; justify-content: center; gap: 18px; margin-top: 18px; }
-  .scr-btns span { width: 50px; height: 50px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-size: 20px; box-shadow: 0 6px 16px -6px rgba(36,18,28,.25); }
-  .scr-btns span.yes { background: var(--ink); color: #fff; }
+  .scr-step { font-size: 9.5px; font-weight: 700; letter-spacing: .1em; color: var(--pink); margin-top: 14px; }
+  .scr-q { font-family: var(--serif); font-style: italic; font-size: 25px; line-height: 1.02; margin: 4px 0 6px; }
+  .scr-sub { font-size: 11px; color: var(--muted); line-height: 1.35; }
+  .scr-search { white-space: nowrap; overflow: hidden; margin-top: 10px; height: 34px; border-radius: 999px; background: #fff; border: 1px solid var(--hairline); display: flex; align-items: center; gap: 7px; padding: 0 12px; font-size: 11.5px; color: var(--muted); }
+  .scr-search b { color: var(--pink); font-size: 12px; }
+  .scr-pills { display: flex; gap: 5px; margin-top: 9px; overflow: hidden; }
+  .scr-pills span { flex: none; font-size: 10.5px; font-weight: 500; padding: 5px 10px; border-radius: 999px; background: #fff; border: 1px solid var(--hairline); }
+  .scr-pills span.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .scr-h { font-family: var(--serif); font-style: italic; font-size: 17px; margin: 10px 0 6px; }
+  .scr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+  .dish { font-size: 10.5px; font-weight: 600; line-height: 1.2; }
+  .dish .ph { aspect-ratio: 1 / 1.05; border-radius: 15px; display: grid; place-items: center; font-size: 46px; margin-bottom: 5px; position: relative; }
+  .dish small { display: block; font-weight: 400; color: var(--muted); font-size: 9.5px; margin-top: 1px; }
+  .dish.pick .ph { animation: pick 6s ease-in-out infinite; }
+  @keyframes pick { 0%, 28% { transform: none; box-shadow: none; } 34% { transform: scale(.94); } 40%, 100% { transform: none; box-shadow: 0 0 0 3px var(--paper), 0 0 0 5px var(--pink); } }
+  .building { position: absolute; inset: 0; background: rgba(250,249,247,.86); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; padding: 30px; opacity: 0; animation: build 6s ease-in-out infinite; }
+  .building .ph { width: 110px; height: 110px; border-radius: 26px; display: grid; place-items: center; font-size: 60px; background: linear-gradient(160deg, #FF9A6B, #E2456B); box-shadow: 0 18px 30px -14px rgba(226,69,107,.6); }
+  .building b { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 22px; line-height: 1.1; }
+  .building small { font-size: 11px; color: var(--muted); }
+  .dots { display: flex; gap: 5px; }
+  .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--pink); animation: dot 1s ease-in-out infinite; }
+  .dots i:nth-child(2) { animation-delay: .15s; } .dots i:nth-child(3) { animation-delay: .3s; }
+  @keyframes dot { 50% { opacity: .25; transform: translateY(-3px); } }
+  @keyframes build { 0%, 52% { opacity: 0; } 58%, 86% { opacity: 1; } 93%, 100% { opacity: 0; } }
+  .d1 { background: linear-gradient(160deg, #FFB08A, #FF7A45); }
+  .d2 { background: linear-gradient(160deg, #DCD0FA, #C9B8F5); }
+  .d3 { background: linear-gradient(160deg, #FFE68A, #FFD94D); }
+  .d4 { background: linear-gradient(160deg, #D6F2DE, #BDE8C9); }
   .float { position: absolute; background: #fff; border-radius: 18px; padding: 12px 14px; box-shadow: 0 20px 40px -18px rgba(36,18,28,.35); font-size: 13px; font-weight: 600; display: flex; gap: 10px; align-items: center; animation: bob 4s ease-in-out infinite; }
   .float i { font-style: normal; font-size: 22px; }
   .float small { display: block; font-weight: 500; color: var(--muted); font-size: 12px; }
-  .f1 { left: -10px; top: 330px; }
-  .f2 { right: -20px; bottom: 110px; animation-delay: -2s; }
+  .f1 { left: -34px; top: 520px; }
+  .f2 { right: -24px; bottom: 36px; animation-delay: -2s; }
   @keyframes bob { 50% { transform: translateY(-10px); } }
 
   /* marquee */
@@ -143,7 +150,23 @@
   .sec-head p { color: var(--muted); font-size: 19px; margin-top: 18px; max-width: 56ch; }
 
   /* steps */
-  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+  .steps .step { grid-column: span 2; }
+  .steps .step:nth-child(n+4) { grid-column: span 3; }
+  .wk { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+  .wk .ph { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; font-size: 22px; flex: none; position: relative; }
+  .wk .ph em { position: absolute; top: -5px; left: -5px; font-style: normal; font-size: 7.5px; font-weight: 800; letter-spacing: .04em; color: #fff; background: var(--pink); padding: 2px 4px; border-radius: 99px; }
+  .wk div small { display: block; font-size: 10.5px; color: var(--muted); font-weight: 500; }
+  .wk div b { font-size: 13px; font-weight: 600; }
+  .wk .sw { margin-left: auto; width: 22px; height: 22px; border-radius: 50%; background: var(--plate); color: var(--muted); display: grid; place-items: center; font-size: 11px; flex: none; }
+  .ovpill { display: inline-flex; gap: 5px; align-items: center; font-size: 11.5px; font-weight: 600; color: #217A3D; background: #E6F5E9; padding: 4px 10px; border-radius: 999px; margin-bottom: 6px; }
+  .bar { height: 7px; border-radius: 99px; background: var(--plate); margin: 2px 0 6px; overflow: hidden; }
+  .bar i { display: block; height: 100%; width: 50%; background: var(--pink); border-radius: 99px; }
+  .seg { display: inline-flex; background: var(--plate); border-radius: 99px; padding: 3px; margin-bottom: 6px; font-size: 11px; font-weight: 600; }
+  .seg span { padding: 4px 10px; border-radius: 99px; color: var(--muted); }
+  .seg span.on { background: #fff; color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .have { margin-top: 8px; font-size: 11.5px; color: var(--muted); background: #fff; border-radius: 12px; padding: 8px 10px; }
+  .have b { color: var(--ink); font-weight: 600; display: block; font-size: 12px; }
   .step { background: #fff; border: 1px solid var(--hairline); border-radius: 28px; padding: 22px; display: flex; flex-direction: column; transition: transform .3s, box-shadow .3s; }
   .step:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -30px rgba(138,43,255,.4); }
   .step .num { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--pink); }
@@ -259,6 +282,8 @@
   /* responsive */
   @media (max-width: 1000px) {
     .steps { grid-template-columns: repeat(2, 1fr); }
+    .steps .step, .steps .step:nth-child(n+4) { grid-column: auto; }
+    .steps .step:last-child { grid-column: span 2; }
     .chips-wrap { grid-template-columns: 1fr 1fr; }
     .chips-wrap .pcard:last-child { grid-column: span 2; }
   }
@@ -272,11 +297,12 @@
     body { font-size: 16px; }
     section { padding: 80px 0; }
     .steps, .chips-wrap { grid-template-columns: 1fr; }
+    .steps .step:last-child { grid-column: auto; }
     .chips-wrap .pcard:last-child { grid-column: auto; }
     .phone { width: 270px; height: 560px; }
     .deck { height: 290px; }
     .f1 { display: none; }
-    .f2 { right: -4px; top: 40px; bottom: auto; }
+    .f2 { right: -4px; bottom: 30px; top: auto; }
     .float { font-size: 12px; padding: 10px 12px; }
     .logo span { font-size: 24px; }
     .navlinks .btn { padding: 10px 16px; font-size: 13px; white-space: nowrap; }
@@ -310,7 +336,7 @@
     <div>
       <span class="pill"><b>NEW</b> Your week of dinners, sorted in minutes</span>
       <h1>Plan the week.<br><em class="grad-text">Shop once.</em><br>Cook like a <em>baddie.</em></h1>
-      <p class="lede">Pick one dinner you're craving and swipe your way to the whole week. <strong>Dinners that share groceries, one list, one Sunday prep</strong>, and weeknights that basically cook themselves.</p>
+      <p class="lede">Pick one dinner you're craving and we'll build the whole week around it. <strong>Dinners that share groceries, one list, one Sunday prep</strong>, and weeknights that basically cook themselves.</p>
       <div class="cta-row">
         <a href="#join" class="btn btn-ink">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.8-1.1-2.8-4.2zM13.9 5.2c.7-.8 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3.1 1.2.1 2.3-.6 3-1.4z"/></svg>
@@ -324,14 +350,20 @@
     <div class="phone-stage" aria-hidden="true">
       <div class="phone">
         <div class="screen">
-          <div class="scr-top"><span class="chic">plannerbaddie</span><small>MON–FRI</small></div>
-          <div class="scr-q">What are you craving this week?</div>
-          <div class="deck">
-            <div class="card c1"><span class="emoji">🌮</span><h4>Chipotle chicken tacos</h4><p>25 min · uses your cilantro</p></div>
-            <div class="card c2"><span class="emoji">🍜</span><h4>Peanut noodle bowls</h4><p>20 min · uses your limes</p></div>
-            <div class="card c3"><span class="tag">3 shared groceries</span><span class="likebadge">YUM</span><span class="emoji">🥗</span><h4>Crispy rice salmon bowl</h4><p>30 min · @creator</p></div>
+          <div class="scr-top"><span class="chic">plannerbaddie</span><small>◎</small></div>
+          <div class="scr-step">STEP 1 · YOUR KEY MEAL</div>
+          <div class="scr-q">Pick one dinner you're craving</div>
+          <div class="scr-sub">We'll build the rest of your week around it.</div>
+          <div class="scr-search"><b>⌕</b>Salmon, tacos, something cozy…</div>
+          <div class="scr-pills"><span>Chicken</span><span class="on">Tacos</span><span>Salmon</span><span>Under 30 min</span></div>
+          <div class="scr-h">For you</div>
+          <div class="scr-grid">
+            <div class="dish pick"><div class="ph d1">🌮</div>Chipotle chicken tacos<small>@creator</small></div>
+            <div class="dish"><div class="ph d2">🍜</div>Peanut noodle bowls<small>@creator</small></div>
+            <div class="dish"><div class="ph d3">🍛</div>Coconut chicken curry<small>@creator</small></div>
+            <div class="dish"><div class="ph d4">🥗</div>Crispy rice salmon bowl<small>@creator</small></div>
           </div>
-          <div class="scr-btns"><span>✕</span><span>↺</span><span class="yes">♥</span></div>
+          <div class="building"><div class="ph">🌮</div><b>Building your week around it…</b><small>Finding dinners that share its groceries</small><div class="dots"><i></i><i></i><i></i></div></div>
         </div>
       </div>
       <div class="float f1"><i>🛒</i><div>1 shopping trip<small>for the whole week</small></div></div>
@@ -351,47 +383,41 @@
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">How it works</div>
-      <h2>Four taps from <em>“what's for dinner?”</em> to dinner.</h2>
-      <p>plannerbaddie runs your week the way the most organized girl you know does it: plan it all at once, shop once, knock out the prep, then just cook.</p>
+      <h2>One craving in. <em>A whole week</em> out.</h2>
+      <p>Pick the one dinner you actually want this week. plannerbaddie plans the rest around it, then hands you the prep, the list and tonight's game plan.</p>
     </div>
 
     <div class="steps">
       <article class="step rv">
         <span class="num">01</span>
-        <h3>Plan</h3>
-        <p>Start with one dinner you're craving. We line up recipes that share its groceries, and you swipe until your week is full.</p>
+        <h3>Pick</h3>
+        <p>Choose one key dinner you're craving from real creator recipes. Search, or tap Tacos, Salmon, Under 30 min…</p>
         <div class="vig"><div class="vig-box">
-          <div class="week">
-            <div class="tp"><b>MON</b>🌮</div>
-            <div class="tl"><b>TUE</b>🍜</div>
-            <div class="tb"><b>WED</b>🥗</div>
-            <div class="tm"><b>THU</b>🍛</div>
-            <div class="tc"><b>FRI</b>🍕</div>
-          </div>
-          <p class="vig-note"><b>5 dinners · 9 overlap.</b> Sorted by how well each one shares with the rest of your week.</p>
+          <div class="scr-pills" style="margin:0 0 10px"><span>Chicken</span><span class="on">Tacos</span><span>Under 30 min</span></div>
+          <div class="wk"><span class="ph d1">🌮</span><div><small>Your key meal</small><b>Chipotle chicken tacos</b></div><span class="sw" style="background:var(--ink);color:#fff">✓</span></div>
+          <p class="vig-note">Everything else gets planned <b>around this one.</b></p>
         </div></div>
       </article>
 
       <article class="step rv">
         <span class="num">02</span>
-        <h3>Shop</h3>
-        <p>One list for the whole week, scaled to your household and sorted by aisle. It skips the stuff you already have.</p>
+        <h3>Your week</h3>
+        <p>We fill the rest of the week with dinners that share its groceries. Swap any night, add one, or drag it to another day.</p>
         <div class="vig"><div class="vig-box">
-          <div class="aisle">PRODUCE</div>
-          <div class="li"><span class="ck on"></span><s>Limes</s><em>×4</em></div>
-          <div class="li"><span class="ck on"></span><s>Cilantro</s><em>×3</em></div>
-          <div class="li"><span class="ck"></span>Avocados</div>
-          <div class="aisle">MEAT &amp; FISH</div>
-          <div class="li"><span class="ck"></span>Chicken thighs, 2 lb<em>×2</em></div>
+          <span class="ovpill">9 overlap · High ›</span>
+          <div class="wk"><span class="ph d1">🌮</span><div><small>Monday · 25 min</small><b>Chipotle chicken tacos</b></div><span class="sw">⇄</span></div>
+          <div class="wk"><span class="ph d2">🍜</span><div><small>Tuesday · 20 min</small><b>Peanut noodle bowls</b></div><span class="sw">⇄</span></div>
+          <div class="wk"><span class="ph d4">🥗</span><div><small>Wednesday · 30 min</small><b>Crispy rice salmon bowl</b></div><span class="sw">⇄</span></div>
         </div></div>
       </article>
 
       <article class="step rv">
         <span class="num">03</span>
         <h3>Prep</h3>
-        <p>A Sunday prep plan made from the week's recipes. Chop, cook the grains, mix the sauces once and store them for the week.</p>
+        <p>One Sunday prep plan for the whole week: chop everything once, cook the grains, whisk the sauces, store and go.</p>
         <div class="vig"><div class="vig-box">
-          <div class="aisle">SUNDAY PREP · ABOUT 1 HR</div>
+          <div class="aisle">SUNDAY PREP</div>
+          <div class="bar"><i></i></div>
           <div class="li"><span class="ck on"></span><s>Cook 4 cups rice</s></div>
           <div class="li"><span class="ck on"></span><s>Dice 2 red onions</s></div>
           <div class="li"><span class="ck"></span>Whisk peanut sauce</div>
@@ -401,8 +427,21 @@
 
       <article class="step rv">
         <span class="num">04</span>
+        <h3>Shop</h3>
+        <p>One grocery list for every dinner, scaled to your household, by aisle or by recipe. The pantry stuff you probably have is set aside.</p>
+        <div class="vig"><div class="vig-box">
+          <div class="seg"><span class="on">By aisle</span><span>By recipe</span></div>
+          <div class="aisle">PRODUCE</div>
+          <div class="li"><span class="ck on"></span><s>Limes</s><em>×4</em></div>
+          <div class="li"><span class="ck"></span>Cilantro<em>×3</em></div>
+          <div class="have"><b>You probably have these</b>Salt, olive oil, cumin, garlic…</div>
+        </div></div>
+      </article>
+
+      <article class="step rv">
+        <span class="num">05</span>
         <h3>Cook</h3>
-        <p>Every night opens on tonight's game plan. The prep's done, so it's step by step and a fraction of the time.</p>
+        <p>Every night opens on tonight's dinner with its game plan. The prep's done, so it's straight into the steps.</p>
         <div class="vig"><div class="vig-box">
           <div class="tonight">
             <small>TONIGHT</small>
@@ -491,8 +530,8 @@
     <div class="faq rv">
       <details open><summary>How is this different from other meal planners?</summary><p>Most planners pick recipes one at a time. plannerbaddie plans the whole week together so your dinners share ingredients, then builds the shopping list and the Sunday prep from that. Less to buy, less to waste, less time at the stove.</p></details>
       <details><summary>Do I have to meal prep?</summary><p>Nope. Prep is there if you want it. Skip it and every dinner still has its full step-by-step recipe on the Cook tab.</p></details>
-      <details><summary>Can I change my week after I plan it?</summary><p>Yes. Swap a dinner, add another, or start a fresh week. Your shopping list updates with it, and you can save weeks you love to repeat later.</p></details>
-      <details><summary>What if I already have some ingredients?</summary><p>Tell us what's usually in your kitchen and it goes into a "probably have" section, so your list is only what you need. Swipe away anything else you've got and it stays off next week's list too.</p></details>
+      <details><summary>Can I change my week after I plan it?</summary><p>Yes. Swap any night for a better fit, add another dinner, drag one to a different day, or start a fresh week. Your shopping list updates with it, and you can save weeks you love to repeat later.</p></details>
+      <details><summary>What if I already have some ingredients?</summary><p>Tell us what's usually in your kitchen and it goes into a "probably have" section, so your list is only what you need. Mark anything else you've already got and it stays off next week's list too.</p></details>
       <details><summary>When can I get it?</summary><p>plannerbaddie is coming to iPhone soon. Drop your email below and you'll be first in line.</p></details>
     </div>
   </div>
